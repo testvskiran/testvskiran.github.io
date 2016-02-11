@@ -2,12 +2,16 @@ var app = angular.module('site', ['ui.bootstrap', 'ngAria']);
 
 app.factory('Backend', ['$http',
     function($http) {
-        return {
-            repos: function(callback) {
-                jQuery.getJSON("https://api.github.com/user/repos?per_page=100&callback=?", function (data){//"https://api.github.com/users/" + "emcconsulting" + "/repos?per_page=100&callback=?"
-                    callback(data.data);
+        var get = function(url) {
+            return function() {
+                return $http.get(url).then(function(resp) {
+                    return resp.data;
                 });
             }
+        };
+
+        return {
+            repos: get('data/repos.json')
         }
     }
 ])
@@ -19,7 +23,7 @@ app.factory('Backend', ['$http',
         //     self.orgs = data;
         // });
         
-        Backend.repos(function(data) {
+        Backend.repos().then(function(data) {
             //self.featured = data;
             
             $scope.currentPage = 1; //current page
