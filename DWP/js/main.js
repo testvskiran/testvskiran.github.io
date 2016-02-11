@@ -4,7 +4,7 @@ app.factory('Backend', ['$http',
     function($http) {
         return {
             repos: function(callback) {
-                jQuery.getJSON("https://api.github.com/user/repos", function (data){//"https://api.github.com/users/" + "emcconsulting" + "/repos?per_page=100&callback=?"
+                jQuery.getJSON("https://api.github.com/user/repos?per_page=100&callback=?", function (data){//"https://api.github.com/users/" + "emcconsulting" + "/repos?per_page=100&callback=?"
                     callback(data.data);
                 });
             }
