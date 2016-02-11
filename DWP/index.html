@@ -98,14 +98,14 @@
 									<a ng-href="{{project.Url}}">
 										<div class="panel panel-default clearfix center carousel-panel">
 											<div class="panel-heading">
-												<span class="panel-title">{{project.Name}}</span>
+												<span class="panel-title">{{project.name}}</span>
 											</div>
-										<div class="panel-body description">{{project.Description}}</div>
+										<div class="panel-body description">{{project.description}}</div>
 											<div class="panel-body">
 												<div class="row">
 													<div class="col-sm-8 col-sm-offset-4 col-xs-12 col-xs-offset-0 text-right">
-														<span class="span-stars-group"><i class="fa fa-star fa-fw"></i>{{project.Stars}}</span>
-														<span class="span-forks-group"><i class="fa fa-code-fork fa-fw"></i>{{project.Forks}}</span>
+														<span class="span-stars-group"><i class="fa fa-star fa-fw"></i>{{project.watchers}}</span>
+														<span class="span-forks-group"><i class="fa fa-code-fork fa-fw"></i>{{project.forks}}</span>
 													</div>
 												</div>
 											</div>
@@ -154,7 +154,7 @@
 								<div class="panel panel-default">
 									<div class="panel-heading">
 										<a ng-href="{{project.Url}}">
-											<div class="panel-title-area">{{project.Name}}</div>
+											<div class="panel-title-area">{{project.name}}</div>
 										</a>
 									</div>
 									<div class="panel-body fork-info">
@@ -162,12 +162,12 @@
 											<span class="glyphicon glyphicon-random"></span>Forked from <a ng-href="{{project.ForkedFromUrl}}">{{project.ForkedFrom}}</a>
 										</span>
 									</div>
-									<div class="panel-body description"><span>{{project.Description}}</span></div>
+									<div class="panel-body description"><span>{{project.description}}</span></div>
 									<div class="panel-body">
 										<div class="row">
 											<div class="center">
-												<span class="span-stars-group"><i class="fa fa-star fa-fw"></i>{{project.Stars}}</span>
-												<span class="span-forks-group"><i class="fa fa-code-fork fa-fw"></i>{{project.Forks}}</span>
+												<span class="span-stars-group"><i class="fa fa-star fa-fw"></i>{{project.watchers}}</span>
+												<span class="span-forks-group"><i class="fa fa-code-fork fa-fw"></i>{{project.forks}}</span>
 											</div>
 										</div>
 									</div>
