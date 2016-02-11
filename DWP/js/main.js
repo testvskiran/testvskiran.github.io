@@ -5,7 +5,7 @@ app.factory('Backend', ['$http',
         var get = function() {
             return function() {
                 jQuery.getJSON("https://api.github.com/users/" + "testvskiran" + "/repos?per_page=100&callback=?", function (data){
-                    return data;
+                    return data.data;
                 });
             }
         };
