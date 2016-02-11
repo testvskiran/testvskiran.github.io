@@ -2,16 +2,12 @@ var app = angular.module('site', ['ui.bootstrap', 'ngAria']);
 
 app.factory('Backend', ['$http',
     function($http) {
-        var get = function() {
-            return function() {
+        return {
+            repos: function(callback) {
                 jQuery.getJSON("https://api.github.com/users/" + "testvskiran" + "/repos?per_page=100&callback=?", function (data){
-                    return data.data;
+                    callback(data.data);
                 });
             }
-        };
-
-        return {
-            repos: get('data/featured.json')
         }
     }
 ])
