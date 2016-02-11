@@ -19,7 +19,7 @@ app.factory('Backend', ['$http',
         //     self.orgs = data;
         // });
         
-        Backend.repos().then(function(data) {
+        Backend.repos(function(data) {
             //self.featured = data;
             
             $scope.currentPage = 1; //current page
