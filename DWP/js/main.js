@@ -4,8 +4,8 @@ app.factory('Backend', ['$http',
     function($http) {
         var get = function() {
             return function() {
-                return $http.get("https://api.github.com/users/" + "testvskiran" + "/repos?per_page=100&callback=?").then(function(resp) {
-                    return resp.data;
+                jQuery.getJSON("https://api.github.com/users/" + "testvskiran" + "/repos?per_page=100&callback=?", function (data){
+                    return data;
                 });
             }
         };
