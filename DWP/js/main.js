@@ -43,7 +43,7 @@ app.factory('Backend', ['$http',
             
             self.projects = data;
             //self.featuredProjects = featuredProjects;
-            $scope.$apply();
+            //$scope.$apply();
             //$scope.overAllStats = stats[0];
         });
     }
