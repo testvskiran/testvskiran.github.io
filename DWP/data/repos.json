@@ -1,5 +1,12 @@
 [
   {
+      "name": "DWP Code",
+      "description": "Repository for Digital Workplace Reusable components",
+      "language": "C#, JavaScript, PowerShell",
+      "fork": false,
+      "html_url": "https://github.com/emcconsulting/dwpcode"
+  },
+  {
     "id": 28018513,
     "name": "nodeUSP",
     "full_name": "emcconsulting/nodeUSP",
@@ -370,12 +377,5 @@
       "push": true,
       "pull": true
     }
-  },
-  {
-      "name": "DWP Code",
-      "description": "Repository for Digital Workplace Reusable components",
-      "language": "C#, JavaScript, PowerShell",
-      "fork": false,
-      "html_url": "https://github.com/emcconsulting/dwpcode"
   }
 ]
